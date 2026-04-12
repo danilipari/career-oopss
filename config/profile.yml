@@ -1,0 +1,82 @@
+# Career-Ops Profile Configuration
+
+candidate:
+  full_name: "Dani Lipari"
+  email: "lipari.assistenza@gmail.com"
+  phone: ""
+  location: "Stabio, Switzerland"
+  linkedin: "linkedin.com/in/dani-lipari-developer"
+  github: "github.com/danilipari"
+
+target_roles:
+  primary:
+    - "Senior Front-End Engineer (Angular/Vue)"
+    - "Team Lead / Tech Lead Front-End"
+    - "Full Stack Developer (FE-Heavy)"
+  framework_preference:
+    preferred: ["Angular", "Vue", "Nuxt"]
+    acceptable: ["Svelte", "Flutter", "vanilla JS/TS frameworks"]
+    last_resort: ["React", "Next.js"]
+  archetypes:
+    - name: "Front-End Engineer"
+      level: "Senior/Lead"
+      fit: "primary"
+    - name: "Full Stack Developer"
+      level: "Senior"
+      fit: "primary"
+    - name: "Front-End Architect"
+      level: "Senior"
+      fit: "secondary"
+    - name: "Web3 / Blockchain Developer"
+      level: "Mid-Senior"
+      fit: "adjacent"
+    - name: "Mobile Developer (Flutter/React Native)"
+      level: "Mid-Senior"
+      fit: "adjacent"
+    - name: "AI/Automation Engineer"
+      level: "Mid-Senior"
+      fit: "adjacent"
+    - name: "Browser Extension Developer"
+      level: "Senior"
+      fit: "adjacent"
+
+narrative:
+  headline: "Team Leader & Senior Front-End Engineer with 7+ years building scalable web apps, SDKs, and browser extensions"
+  exit_story: "Led full-stack migrations across Angular, Vue, and React. Built and shipped production Chrome extensions, published SDKs on npm and PyPI, competed in Web3 hackathons. Now looking for a senior/lead role where I can drive architecture decisions, build tooling, and mentor teams."
+  superpowers:
+    - "Framework migrations at scale (React/Next.js to Angular/Vue/Nuxt at DonTouch)"
+    - "Multi-framework fluency: Angular, Vue/Nuxt, Svelte, Flutter + backend (NestJS, AdonisJS, Hono). React experience but not preferred."
+    - "SDK & library authorship (Amilon B2B Client on npm, Stencil component library)"
+    - "Browser extension architecture (WhatsCRM: 16k+ LOC, Manifest V3, 20+ production releases)"
+    - "Open source contributor (WAHA, 6k+ stars)"
+  proof_points:
+    - name: "WhatsCRM Extension"
+      url: "https://github.com/danilipari"
+      hero_metric: "Chrome Manifest V3 CRM overlay on WhatsApp Web, Vue 3 + Pinia, JWT cross-domain auth, 16k+ LOC, 20+ releases"
+    - name: "Dead Man's Switch (IOTA Hackathon)"
+      url: "https://deadswitch.app"
+      hero_metric: "Decentralized digital legacy platform, Vue 3 + Hono + Move smart contracts, AES-256-GCM, Turborepo monorepo"
+    - name: "Amilon B2B Client"
+      url: "https://www.npmjs.com/package/amilon-b2b-client"
+      hero_metric: "TypeScript SDK on npm, OAuth2 auto-refresh, exponential backoff retry, dual ESM/CJS"
+    - name: "DumpConfluence"
+      url: "https://pypi.org/project/dumpconfluence/"
+      hero_metric: "Python CLI on PyPI, Confluence backup with embedded images, batch processing, mypy strict"
+    - name: "WAHA - WhatsApp HTTP API"
+      url: "https://github.com/devlikeapro/waha"
+      hero_metric: "6k+ GitHub stars, active contributor"
+    - name: "3k+ GitHub contributions"
+      url: "https://github.com/danilipari"
+      hero_metric: "3000+ contributions in a single year"
+
+compensation:
+  target_range: "90K-110K CHF"
+  currency: "CHF"
+  minimum: "100K CHF"
+  location_flexibility: "Remote preferred, hybrid Ticino/Lugano OK. On-site only if 115-120K CHF"
+
+location:
+  country: "Switzerland"
+  city: "Stabio"
+  timezone: "CET"
+  visa_status: "No sponsorship needed (based in Switzerland)"
