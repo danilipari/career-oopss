@@ -73,6 +73,7 @@ compensation:
   target_range: "90K-110K CHF"
   currency: "CHF"
   minimum: "100K CHF"
+  eur_remote_acceptable: "80K-95K EUR (ONLY for fully remote positions, Europe timezone)"
   location_flexibility: "Remote preferred, hybrid Ticino/Lugano OK. On-site only if 115-120K CHF"
 
 location:

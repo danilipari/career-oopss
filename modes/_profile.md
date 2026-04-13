@@ -81,21 +81,25 @@ Frame profile as **"Builder who ships across the full spectrum"** -- from Chrome
 
 ## Your Comp Targets
 
-- **Remote/Hybrid:** 90K-110K CHF
-- **On-site:** 115-120K CHF
-- **Acceptable starting:** 100K CHF
-- Use WebSearch for current Swiss market data (Glassdoor, Levels.fyi, swissdevjobs.ch)
+- **Remote/Hybrid (CHF):** 90K-110K CHF
+- **On-site (CHF):** 110K-120K CHF
+- **Acceptable starting (CHF):** 100K CHF
+- **EUR remote-only:** 80K-95K EUR (ONLY for fully remote positions, Europe timezone)
+- Use WebSearch for current Swiss market data (Glassdoor, Levels.fyi, swissdevjobs.ch) and European remote benchmarks
 
 ## Your Negotiation Scripts
 
-**Salary expectations:**
+**Salary expectations (CHF roles):**
 > "Based on market data for senior front-end / tech lead roles in Switzerland, I'm targeting 90-110K CHF for remote positions. I'm flexible on structure -- what matters is the total package and the opportunity."
+
+**Salary expectations (EUR remote roles):**
+> "For fully remote positions in the European market, I'm targeting 80-95K EUR. I'm flexible on structure and value equity, growth opportunities, and the right cultural fit."
 
 **Geographic discount pushback:**
 > "I'm based in Switzerland and available for hybrid in Ticino. The roles I'm competitive for are output-based, not location-based."
 
 **When offered below target:**
-> "I'm comparing with opportunities in the 100-110K range. I'm drawn to [company] because of [reason]. Can we explore something closer to my target?"
+> "I'm comparing with opportunities in the 100-110K CHF range (or 80-95K EUR for remote). I'm drawn to [company] because of [reason]. Can we explore something closer to my target?"
 
 ## Your Location Policy
 
@@ -106,7 +110,9 @@ Frame profile as **"Builder who ships across the full spectrum"** -- from Chrome
 - Visa: No sponsorship needed
 
 **In evaluations (scoring):**
-- Remote: score normally
-- Hybrid within Ticino/Lugano: score normally
+- Remote (CHF 90-110K or EUR 80-95K): score normally
+- Hybrid within Ticino/Lugano (CHF 90-110K): score normally
 - Hybrid outside Ticino but in Switzerland: score 3.5
 - On-site only, no exceptions: score 2.0 (unless 115K+ CHF)
+- **EUR compensation below 80K**: score max 3.5 (unless exceptional equity/growth potential)
+- **EUR remote in range 80-95K**: score normally in Block C (comp)

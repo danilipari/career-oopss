@@ -1,9 +1,5 @@
 # Personal data (user fills these)
-data/pipeline.md
-data/scan-history.tsv
-reports/*.md
 !reports/.gitkeep
-output/*
 !output/.gitkeep
 batch/logs/*
 !batch/logs/.gitkeep

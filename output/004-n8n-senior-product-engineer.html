@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dani Lipari — CV</title>
+<style>
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('../templates/fonts/space-grotesk-latin.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('../templates/fonts/space-grotesk-latin-ext.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('../templates/fonts/dm-sans-latin.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('../templates/fonts/dm-sans-latin-ext.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a2e;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 2px 0;
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a2e;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+    line-height: 1.1;
+  }
+
+  .header-gradient {
+    height: 2px;
+    background: linear-gradient(to right, hsl(187, 74%, 32%), hsl(270, 70%, 45%));
+    border-radius: 1px;
+    margin-bottom: 10px;
+  }
+
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10.5px;
+    line-height: 1.4;
+    color: #555;
+  }
+
+  .contact-row a {
+    color: #555;
+    text-decoration: none;
+  }
+
+  .contact-row .separator {
+    color: #ccc;
+  }
+
+  .section {
+    margin-bottom: 18px;
+  }
+
+  .section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: hsl(187, 74%, 32%);
+    border-bottom: 1.5px solid #e2e2e2;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .summary-text {
+    font-size: 11px;
+    line-height: 1.7;
+    color: #2f2f2f;
+  }
+
+  a {
+    white-space: nowrap;
+  }
+
+  .competencies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .competency-tag {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: hsl(187, 74%, 28%);
+    background: hsl(187, 40%, 95%);
+    padding: 4px 10px;
+    border-radius: 3px;
+    border: 1px solid hsl(187, 40%, 88%);
+  }
+
+  .job {
+    margin-bottom: 14px;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+
+  .job-company {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: hsl(270, 70%, 45%);
+  }
+
+  .job-period {
+    font-size: 10.5px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .job-role {
+    font-size: 11px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+  }
+
+  .job-location {
+    font-size: 10px;
+    color: #888;
+  }
+
+  .job ul {
+    padding-left: 18px;
+    margin-top: 6px;
+  }
+
+  .job li {
+    font-size: 10.5px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  .job li strong {
+    font-weight: 600;
+  }
+
+  .project {
+    margin-bottom: 12px;
+  }
+
+  .project-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: hsl(270, 70%, 45%);
+  }
+
+  .project-badge {
+    font-size: 9px;
+    font-weight: 500;
+    color: hsl(187, 74%, 32%);
+    background: hsl(187, 40%, 95%);
+    padding: 1px 6px;
+    border-radius: 2px;
+    margin-left: 6px;
+  }
+
+  .project-desc {
+    font-size: 10.5px;
+    color: #444;
+    margin-top: 3px;
+    line-height: 1.55;
+  }
+
+  .project-tech {
+    font-size: 9.5px;
+    color: #888;
+    margin-top: 3px;
+  }
+
+  .edu-item {
+    margin-bottom: 8px;
+  }
+
+  .edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .edu-title {
+    font-weight: 600;
+    font-size: 11px;
+    color: #333;
+  }
+
+  .edu-org {
+    color: hsl(270, 70%, 45%);
+    font-weight: 500;
+  }
+
+  .edu-year {
+    font-size: 10px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .edu-desc {
+    font-size: 10px;
+    color: #666;
+    margin-top: 2px;
+    line-height: 1.5;
+  }
+
+  .cert-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 6px;
+  }
+
+  .cert-title {
+    font-size: 10.5px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .cert-org {
+    color: hsl(270, 70%, 45%);
+  }
+
+  .cert-year {
+    font-size: 10px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+  }
+
+  .skill-item {
+    font-size: 10.5px;
+    color: #444;
+  }
+
+  .skill-category {
+    font-weight: 600;
+    color: #333;
+    font-size: 10.5px;
+  }
+
+  @media print {
+    body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      padding: 0;
+    }
+  }
+
+  .avoid-break,
+  .job,
+  .project,
+  .edu-item,
+  .cert-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header avoid-break">
+    <h1>Dani Lipari</h1>
+    <div class="header-gradient"></div>
+    <div class="contact-row">
+      <span>lipari.assistenza@gmail.com</span>
+      <span class="separator">|</span>
+      <a href="https://linkedin.com/in/dani-lipari-developer">linkedin.com/in/dani-lipari-developer</a>
+      <span class="separator">|</span>
+      <a href="https://github.com/danilipari">github.com/danilipari</a>
+      <span class="separator">|</span>
+      <span>Stabio, Switzerland (Remote/Hybrid)</span>
+    </div>
+  </div>
+
+  <div class="section avoid-break">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary-text">
+      Senior Product Engineer with 7+ years owning Vue/TypeScript features end-to-end. Led full migration from React/Next.js to Vue/Nuxt at DonTouch (NX monorepo, Pinia state, 4-person team). Shipped production browser extension (WhatsCRM: Vue 3 + Pinia, 16k+ LOC, 20+ releases) with cross-domain auth and CRM workflow automation. Published SDKs on npm (Amilon B2B Client: TypeScript, OAuth2, dual ESM/CJS) and PyPI (DumpConfluence). Active open source contributor (WAHA: 6k+ stars, 3k+ GitHub contributions this year). Built AI-powered decentralized platform (Dead Man's Switch: Vue 3 + Hono + Move smart contracts, Turborepo). Seeking product ownership role where I can discover, ship, and iterate on customer-facing Vue features with metrics-driven impact. Case studies: <a href="https://deadswitch.app">deadswitch.app</a>, <a href="https://github.com/danilipari">github.com/danilipari</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Core Competencies</div>
+    <div class="competencies-grid">
+      <span class="competency-tag">Vue.js 3 + Pinia Product Features</span>
+      <span class="competency-tag">TypeScript + Node.js Full-Stack Shipping</span>
+      <span class="competency-tag">Product Ownership (Discovery to Delivery)</span>
+      <span class="competency-tag">Integration & API Platform Building</span>
+      <span class="competency-tag">High-Traffic SaaS Systems</span>
+      <span class="competency-tag">Open Source Contribution & SDK Authorship</span>
+      <span class="competency-tag">Workflow Automation Architecture</span>
+      <span class="competency-tag">Monorepo Architecture (NX/Turborepo)</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Work Experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">DonTouch SA</span>
+        <span class="job-period">March 2022 - Present</span>
+      </div>
+      <div class="job-role">Team Leader - Senior Front-End Engineer</div>
+      <div class="job-location">Lugano, Switzerland | Permanent Contract</div>
+      <ul>
+        <li>Owned full migration from legacy React/Next.js codebase to Vue/Nuxt -- discovery (architecture audit), delivery (NX monorepo, Pinia state), iteration (4-person team onboarding)</li>
+        <li>Shipped customer-facing TypeScript features across frontend (Angular 21, Vue 3, Ionic 8) and backend (Node.js, Strapi CMS, Firebase integrations)</li>
+        <li>Built scalable Node.js APIs deployed on AWS and GCS Cloud with Firebase real-time sync (messaging, RTDB, Firestore)</li>
+        <li>Mentored team through code reviews, pair programming, and knowledge-sharing sessions</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Open Source Ecosystem (WAHA, Amilon, DumpConfluence)</span>
+        <span class="job-period">2024 - Present</span>
+      </div>
+      <div class="job-role">Active Contributor & SDK Author</div>
+      <div class="job-location">Remote</div>
+      <ul>
+        <li>Contributed to WAHA (WhatsApp HTTP API, 6k+ GitHub stars): features, bug fixes, documentation for Node.js/TypeScript Docker-based API</li>
+        <li>Published Amilon B2B Client SDK on npm: TypeScript OAuth2 client with auto-refresh, exponential backoff retry, dual ESM/CJS support. Built for developer-facing integration use cases.</li>
+        <li>Published DumpConfluence CLI on PyPI: Python-based Confluence backup tool with batch processing and embedded image extraction</li>
+        <li>3k+ GitHub contributions this year across open source projects and personal experiments</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">DUNED Group</span>
+        <span class="job-period">June 2022 - January 2023</span>
+      </div>
+      <div class="job-role">Full Stack Developer (FE-Heavy)</div>
+      <div class="job-location">Remote, Switzerland | Freelance</div>
+      <ul>
+        <li>Built Angular 15 front-end with MS-SQL-Server backend integration via Node.js/Express REST API</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Studio Speri Societa di ingegneria Srl</span>
+        <span class="job-period">February 2021 - April 2025</span>
+      </div>
+      <div class="job-role">Full Stack Developer</div>
+      <div class="job-location">Rome, Italy | Freelance</div>
+      <ul>
+        <li>Designed and deployed full-stack applications: MySQL + Sequelize ORM, Node.js/Express APIs, Angular 12 SPAs, JWT auth, Socket.IO real-time features</li>
+        <li>Implemented CI/CD pipelines and deployed to Heroku Cloud</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section avoid-break">
+    <div class="section-title">Key Projects</div>
+
+    <div class="project">
+      <span class="project-title">WhatsCRM Extension</span>
+      <span class="project-badge">Production</span>
+      <div class="project-desc">
+        Chrome Manifest V3 CRM overlay on WhatsApp Web. Vue 3 + Pinia state management, JWT cross-domain authentication, DOM integration. 16k+ LOC, 20+ production releases. Demonstrates product ownership: discovery (user needs), delivery (iterative releases), metrics (user retention tracking).
+      </div>
+      <div class="project-tech">Tech: Vue 3, Pinia, TypeScript, Chrome Extension APIs, JWT, 16k+ LOC</div>
+    </div>
+
+    <div class="project">
+      <span class="project-title">Dead Man's Switch</span>
+      <span class="project-badge">Live</span>
+      <div class="project-desc">
+        Decentralized digital legacy platform built for IOTA x MasterZ Hackathon. Vue 3 frontend with customer-facing dashboard, Hono backend API, Move smart contracts for blockchain identity (DID). AES-256-GCM encryption, Turborepo monorepo. <a href="https://deadswitch.app">deadswitch.app</a>
+      </div>
+      <div class="project-tech">Tech: Vue 3, Hono, Move Smart Contracts, IOTA, Turborepo, AES-256-GCM</div>
+    </div>
+
+    <div class="project">
+      <span class="project-title">Amilon B2B Client SDK</span>
+      <span class="project-badge">npm</span>
+      <div class="project-desc">
+        TypeScript SDK published on npm for Amilon API integration. OAuth2 auto-refresh, exponential backoff retry, dual ESM/CJS module support. Type-safe API client for developer-facing use cases. Demonstrates integration and API platform building experience.
+      </div>
+      <div class="project-tech">Tech: TypeScript, OAuth2, npm, ESM/CJS dual format</div>
+    </div>
+
+    <div class="project">
+      <span class="project-title">DumpConfluence CLI</span>
+      <span class="project-badge">PyPI</span>
+      <div class="project-desc">
+        Python CLI tool published on PyPI for Confluence backup automation. Batch processing, embedded image extraction, mypy strict typing. Built for developer workflow automation.
+      </div>
+      <div class="project-tech">Tech: Python, Confluence API, PyPI, mypy strict</div>
+    </div>
+  </div>
+
+  <div class="section avoid-break">
+    <div class="section-title">Education & Certifications</div>
+
+    <div class="edu-item">
+      <div class="edu-header">
+        <div class="edu-title">MasterZ x IOTA Hackathon <span class="edu-org">European Web3 Hackathon</span></div>
+        <div class="edu-year">February-March 2026</div>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-header">
+        <div class="edu-title">Web3 & Blockchain Developer Specialization <span class="edu-org">MasterZ Blockchain</span></div>
+        <div class="edu-year">August 2024 - December 2025</div>
+      </div>
+      <div class="edu-desc">Solidity, Move smart contracts, DID identity, decentralized application architecture</div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-header">
+        <div class="edu-title">Vue.js 3 Master Class <span class="edu-org">Vueschool.io</span></div>
+        <div class="edu-year">2022 - Upgraded 2025</div>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-header">
+        <div class="edu-title">NestJS Fundamentals Course <span class="edu-org">Official NestJS Courses</span></div>
+        <div class="edu-year">March-April 2022</div>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-header">
+        <div class="edu-title">Master Web Architect - Full Stack Developer (30/30) <span class="edu-org">CEFI</span></div>
+        <div class="edu-year">September 2018 - April 2019</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section avoid-break">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <span class="skill-item"><span class="skill-category">Frontend:</span> Vue.js 3, Pinia, Angular 21, NGRX, TypeScript, Nuxt, Ionic 8, Stencil</span>
+      <span class="skill-item"><span class="skill-category">Backend:</span> Node.js, NestJS, AdonisJS, Hono, Express, Strapi</span>
+      <span class="skill-item"><span class="skill-category">Database:</span> MySQL, PostgreSQL, MS-SQL-Server, Sequelize, Firebase (RTDB, Firestore)</span>
+      <span class="skill-item"><span class="skill-category">DevOps:</span> Docker, CI/CD, AWS, GCS Cloud, Heroku, NX Monorepo, Turborepo</span>
+      <span class="skill-item"><span class="skill-category">APIs:</span> REST, GraphQL, OAuth2, JWT, WebSockets (Socket.IO)</span>
+      <span class="skill-item"><span class="skill-category">Languages:</span> TypeScript, JavaScript (ES6+), Python, Dart, Go, Solidity, Move</span>
+      <span class="skill-item"><span class="skill-category">Mobile:</span> Flutter, React Native, Ionic</span>
+      <span class="skill-item"><span class="skill-category">Web3:</span> Move Smart Contracts (IOTA), Solidity (Ethereum), DID Identity</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
